@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_reservas" value="name:cliente_id;datatype:int,name:casa_id;datatype:int,name:adultos;datatype:int,name:nenes;datatype:int,name:bebes;datatype:int,name:entrada;datatype:date,name:salida;datatype:date,name:anticipo;datatype:real,name:observaciones;datatype:blob,name:estado;datatype:int" />
+</info>

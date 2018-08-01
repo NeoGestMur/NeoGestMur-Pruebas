@@ -1,0 +1,283 @@
+/* CSS Document */
+
+/*  calendariog grande  */
+
+
+#mes_e{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #eeeeee;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	border: 1px solid #dee7f4;
+}
+
+#mes_e h1{
+	font-size: 24px;
+	color: #335;
+
+}
+#mes_e a{
+
+	color: #335;
+
+	text-decoration: none;
+
+}
+
+#mes_e a:hover{
+
+	font-weight: bolder;
+
+}
+
+.calendariog {
+	text-align: center;
+	background-color: #dee7f4;
+	font-size: 0.9em;
+	background-color: #eeeeee;
+
+}
+
+
+
+.calendariog h1 {
+	margin: 20px 5px 0px 5px;
+	padding: 10px;
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #9a0505;
+	background-color: #cc0000;
+
+}
+.calendariog h1 a:link, .calendariog h1 a:visited {
+	color: #FFF;
+	text-decoration: none; 
+
+}
+.calendariog h1 a:hover {
+	color: #FFF;
+	text-decoration: underline; 
+
+}
+
+.calendariog table {
+
+	border-collapse: separate;
+
+	border: 1px solid #9DABCE;
+
+	border-width: 0px 0px 1px 1px;
+
+	margin: 10px auto;
+
+	font-size: 18px;
+
+}
+
+.calendariog td, .calendariog th {
+
+	width: 81px;
+	height: 81px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../img/celdas-gd.png);
+	color: #444;
+	position: relative;
+
+}
+
+.calendariog th {
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.calendariog td:hover, .calendariog th:hover {
+	background-position: 0px -81px;
+	color: #222;
+}
+
+.calendariog td.date_has_event {
+	background-position: 162px 0px;
+	color: white;
+}
+
+.calendariog td.color {
+	background-position: 162px 0px;
+	color: white;
+}
+
+.calendariog td.date_has_event:hover {
+	background-position: 162px -81px;
+
+}
+
+
+
+/* estado del alquiler  */
+
+.calendariog td.bloqueado {
+
+	background-position: 162px 0px;
+
+	color: white;
+
+}
+
+.calendariog td.bloqueado:hover {
+
+	background-position: 162px -81px;
+
+}
+
+.calendariog td.reservado {
+
+	background-position: 242px 0px;
+
+	color: white;
+
+}
+
+.calendariog td.reservado:hover {
+
+	background-position: 242px -81px;
+
+}
+
+.calendariog td.estan {
+
+	background-position: 324px 0px;
+
+	color: white;
+
+}
+
+.calendariog td.estan:hover {
+
+	background-position: 324px -81px;
+
+}
+
+.calendariog td.se_van {
+
+	background-position: 405px 0px;
+
+	color: white;
+
+}
+
+.calendariog td.se_van:hover {
+
+	background-position: 405px -81px;
+
+}
+.calendariog td.coincide {
+	background-position: 81px 0px;
+	color: #000;
+}
+.calendariog td.coincide:hover {
+	background-position: 81px -81px;
+}
+
+
+
+/* fin estado */
+
+.calendariog td.padding {
+
+	background: url(../img/calpad.jpg);
+
+}
+
+.calendariog td.today {
+
+	background-position: 25px 0px;
+
+	color: white;
+
+}
+
+.calendariog td.today:hover {
+
+	background-position: 25px -25px;
+
+}
+
+.calendariog .events {
+
+	position: relative;
+
+}
+
+.calendariog .events ul {
+
+	text-align: left;
+
+	position: absolute;
+
+	display: none;
+
+	z-index: 1000;
+
+	padding: 15px;
+
+	background: #E7ECF2 url(../img/popup.png) no-repeat;
+
+	color: white;
+
+	border: 1px solid white;
+
+	font-size: 15px;
+
+	width: 200px;
+
+	-moz-border-radius: 3px;
+
+	-khtml-border-radius: 3px;
+
+	-webkit-border-radius: 3px;
+
+	-border-radius: 3px;
+
+	list-style: none;
+
+	color: #444444;
+
+	-webkit-box-shadow: 0px 8px 8px #333;
+
+}
+
+.calendariog .events li {
+
+	padding-bottom: 5px;
+
+}
+
+.calendariog .events li span {
+
+	display: block;
+
+	font-size: 12px;
+
+	text-align: justify;
+
+	color: #555;
+
+}
+
+.calendariog .events li span.title {
+
+	font-weight: bold;
+
+	color: #222;
+
+}
+
+
+
+/* fin calendariog grande */

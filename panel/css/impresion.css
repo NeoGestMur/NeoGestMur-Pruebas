@@ -1,0 +1,432 @@
+@charset "iso-8859-1";
+
+/* CSS Document */
+
+
+
+* {
+
+	border: 0px;
+
+	padding: 0px;
+
+}
+
+.limpiar{
+
+	clear: both;
+
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenido{
+
+	width: 900px;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+}
+#menu {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+	display:none;
+
+}
+
+#menu ul{
+	list-style-type: none;
+}
+
+#menu ul li{
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: center;
+	padding: 5px;
+	background-color: #333;
+	margin: 5px;
+}
+
+#menu ul li a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+#mes{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #eeeeee;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	border: 1px solid #dee7f4;
+}
+
+#mes h1{
+	font-size: 24px;
+	color: #335;
+
+}
+
+#mes a{
+
+	color: #335;
+
+	text-decoration: none;
+
+}
+
+#mes a:hover{
+
+	font-weight: bolder;
+
+}
+
+/*  Calendario mini  */
+
+#calendarios{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #dee7f4;
+	background-color: #eeeeee;
+}
+
+.calendario {
+	text-align: center;
+	background-color: #dee7f4;
+	background-color: #eeeeee;
+
+}
+
+.calendario{
+	width: 210px;
+	float: left;
+	text-align: center;
+
+}
+
+.calendario h1 {
+	margin: 20px 5px 0px 5px;
+	padding: 10px;
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #9a0505;
+	background-color: #cc0000;
+
+}
+.calendario h1 a:link, .calendario h1 a:visited {
+	color: #FFF;
+	text-decoration: none; 
+
+}
+.calendario h1 a:hover {
+	color: #FFF;
+	text-decoration: underline; 
+}
+
+.calendario table {
+	border-collapse: separate;
+	border: 1px solid #9DABCE;
+	margin: 10px auto;
+	font-size: 0.9em;
+}
+
+.calendario td, .calendario th {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../img/celdas.png);
+	color: #444;
+	position: relative;
+
+}
+
+.calendario th {
+
+	height: 22px;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+}
+
+.calendario td:hover, .calendario th:hover {
+
+	background-position: 0px -25px;
+
+	color: #222;
+
+}
+
+.calendario td.date_has_event {
+
+	background-position: 25px 0px;
+
+	color: white;
+
+}
+
+.calendario td.color {
+
+	background-position: 75px 0px;
+
+	color: white;
+
+}
+
+.calendario td.date_has_event:hover {
+
+	background-position: 25px -25px;
+
+}
+
+
+
+/* estado del alquiler  */
+
+.calendario td.bloqueado {
+
+	background-position: 25px 0px;
+
+	color: white;
+
+}
+
+.calendario td.bloqueado:hover {
+
+	background-position: 25px -25px;
+
+}
+
+.calendario td.reservado {
+
+	background-position: 50px 0px;
+
+	color: white;
+
+}
+
+.calendario td.reservado:hover {
+
+	background-position: 50px -25px;
+
+}
+
+.calendario td.estan {
+
+	background-position: 75px 0px;
+
+	color: white;
+
+}
+
+.calendario td.estan:hover {
+
+	background-position: 75px -25px;
+
+}
+
+.calendario td.se_van {
+
+	background-position: 100px 0px;
+
+	color: white;
+
+}
+
+.calendario td.se_van:hover {
+
+	background-position: 100px -25px;
+
+}
+
+.calendario td.coincide {
+	background: url(../img/celdas2.png);
+	background-position: 25px 0px;
+	color: black;
+}
+.calendario td.coincide:hover {
+	background-position: 25px -25px;
+}
+
+
+/* fin estado */
+
+.calendario td.padding {
+
+	background: url(../img/calpad.jpg);
+
+}
+
+.calendario td.today {
+
+	background-position: 25px 0px;
+
+	color: white;
+
+}
+
+.calendario td.today:hover {
+
+	background-position: 25px -25px;
+
+}
+
+.calendario .events {
+
+	position: relative;
+
+}
+
+.calendario .events ul {
+
+	text-align: left;
+
+	position: absolute;
+
+	display: none;
+
+	z-index: 1000;
+
+	padding: 15px;
+
+	background: #E7ECF2 url(../img/popup.png) no-repeat;
+
+	color: white;
+
+	border: 1px solid white;
+
+	font-size: 15px;
+
+	width: 200px;
+
+	-moz-border-radius: 3px;
+
+	-khtml-border-radius: 3px;
+
+	-webkit-border-radius: 3px;
+
+	-border-radius: 3px;
+
+	list-style: none;
+
+	color: #444444;
+
+	-webkit-box-shadow: 0px 8px 8px #333;
+
+}
+
+.calendario .events li {
+
+	padding-bottom: 5px;
+
+}
+
+.calendario .events li span {
+
+	display: block;
+
+	font-size: 12px;
+
+	text-align: justify;
+
+	color: #555;
+
+}
+
+.calendario .events li span.title {
+
+	font-weight: bold;
+
+	color: #222;
+
+}
+
+/* fin calendario mini */
+
+
+
+/* tablas listados */
+.bton_nuevo {
+	color: #000;
+	background-color: #C00;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	margin: 10px 0px 10px 5px;
+
+}
+.bton_nuevo a {
+	color: #FFF;
+	text-decoration: none;
+}
+.tabla {
+	margin-top: 20px;
+}
+.tabla input, .tabla select{
+	background-color: #FFF;
+	color: #000;
+	height: 26px;
+	padding: 3px;
+
+}
+
+.barra{
+
+	background-color: #a20d0d;
+	color: #FFF;
+
+}
+
+/* formularios */
+.caja_frm{
+	background-color: #eeeeee;
+	border: #dee7f4;
+	padding: 20px 20px 20px 20px;
+
+}
+.caja_frm h1{
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 1.3em;
+
+}
+
+.caja_frm input, .caja_frm select, .caja_frm textarea{
+	margin-top: 4px;
+	padding: 3px;
+
+}
+
+.caja_frm input, .caja_frm select{
+
+	height: 25px;
+
+}
+.bton-form{
+	width: 120px;
+	padding: 5px;
+	background-color: #333333;
+	color: #FFF;
+}
+.error{
+	color: #F00;
+}
+.factura th {
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	padding: 5px 0px;
+}

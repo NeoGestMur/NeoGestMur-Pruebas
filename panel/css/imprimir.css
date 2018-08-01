@@ -1,0 +1,8 @@
+@charset "iso-8859-1";
+/* CSS Document */
+#menu{
+	visibility: hidden;
+}
+.frm-b{visibility: hidden;}
+.bton_nuevo{visibility: hidden;}
+.botones_a{visibility: hidden;}
